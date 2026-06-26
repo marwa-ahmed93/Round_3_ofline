@@ -1,0 +1,101 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* text-align: center;
+    background-color: green; */
+    font-family: "Lora", serif;
+}
+
+/* h2{
+    color: blue;
+} */
+.item1{
+  text-align: center;  
+  color: red;
+}
+.item2{
+    color: gold;
+}
+.item{
+    background-color: teal;
+    /* background-color: transparent; */
+    /* width: 25%; */
+    text-align: center;
+    color: #fff;
+    /* color: black; */
+}
+.item2{
+    width: 50%;
+}
+.item2 h2{
+    color: yellowgreen;
+}
+/* a{
+    display: block;
+    background-color: tomato;
+    width: 20%;
+}
+p{
+     display: inline;
+     background-color: blue;
+     width: 50%;
+} */
+
+
+ h1{
+    text-align: center;
+ }
+ span{
+    color: blue;
+ }
+ .parent{
+     text-align: center;
+ }
+.chiled{
+    /* background-color: tomato; */
+    width: 32.3%;
+    text-align: center;
+   display: inline-block;
+}
+.chiled img{
+   width:100%; 
+}
+ /*    
+ border 
+ style
+ color
+ width
+ */
+.bord{
+/* background-color: tomato; */
+width: 300px;
+height: 300px;
+/* border-color: blue;
+border-style: solid; */
+/* border-width: 5px; */
+border: 20px solid red ;
+/* border-top-left-radius: 50%;
+border-bottom-right-radius: 50%; */
+/* border-radius: 50%; */
+/* border-right: 10px solid tomato; */
+/* border-top-right:10px solid tomato ; */
+/* border-top:  10px solid tomato; */
+
+}
+
+
+
+/* fonts
+size    vector
+
+*/
+p{
+font-size: 200%;
+font-weight: 800;
+
+/* font-style: ; */
+/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
