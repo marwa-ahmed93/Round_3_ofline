@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+      box-sizing: border-box;
+}
+
+
+/* #h__{
+
+} */
+/*spacing */
+.item{
+    background-color: blue;
+    width: 50%;
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px; */
+    /* margin: auto; */
+    margin: 100px  auto ;
+    /* padding-left: 30px;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-right: 10px; */
+    /* padding: 20px 10px 20px 30px;  */
+    padding: 50px; 
+    text-align: center;
+}
+
+
+/*background image*/
+.parent{
+    background-color: brown; 
+    color:  white;
+    background-image: url(../images/bgs.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    /* background-image: url(../images/images.jpg),url(../images/bath.png);  */
+    /* background-size: 100% 100%; */
+    /* background-repeat: no-repeat , repeat;
+    background-position: center center , 200px 150px; */
+    width:600px;
+    height: 600px;
+}
+
+
+/*  floating*/
+
+.meals{
+    /* background-color: tomato; */
+    /* text-align: center; */
+    width: 85%;
+    margin: auto;
+}
+.mael{
+   
+    width: 25%;
+    text-align: center;
+    /* display: inline-block; */
+    float: left;
+   /* padding: 10px; */
+   /* margin: 10px; */
+   padding: 20px;
+   /* border: 2px solid green; */
+ 
+}
+.inner-item{
+    background-color: gold;
+}
+.mael img{
+    width: 90%;
+    border-radius: 50%;
+}
+.mael p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding: 15px;
+
+}
+.clr{
+    clear: both;
+}
+.line{
+    width: 20%;
+    height: 3px;
+    background-color: gray;
+    margin: auto;
+}
+
+.test{
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.test p{
+    background-color: blue;
+    
+}
+
+
+
+/*//////////////////////////////////////////////////*/
+/*position*/
+
+.posi{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    /* position: absolute;
+    bottom:  0;
+    right: 0; */
+    position: relative;
+}
+.chiled{
+    width: 50%;
+    height: 150px;
+    background-color: brown;  
+    position: absolute;
+    bottom:  50px;
+}
+.fixed{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    /* right: 5px; */
+
+}
+.stiky{
+    position: sticky;
+    top: 0;
+    width: 70%;
+    background-color: blueviolet;
+}
+.stiky2{
+    position: sticky;
+    top: 0;
+    width: 90%;
+    background-color: red;
+}
+
+.realt{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    position: relative;
+    /* top: 10px; 
+    bottom: ;
+    left: 10px;
+    right: ; */
+}
+.one{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 3; 
+}
+.two{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+     position: absolute;
+     top: 120px;
+     left: 120px;
+     z-index: 2;
+
+}
+.three{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+     position: absolute;
+     top: 140px;
+     left: 140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   media query   
+             
+   600  > xsm  
+   600  >  sm  > 768
+   768  > md  >992
+   992 > lg  >1200
+   xlg>1200
+*/
+/* @media screen and (max-width:800px) {
+    body{
+        background-color: blue;
+    }
+    .mael{
+        width: 100%;
+    }
+} */
+
+
+@media screen and (min-width:1200px) {
+   .mael{
+        width: 25%;
+    } 
+}
+
+
+@media screen and (max-width:1199px) and (min-width:992px) {
+   .mael{
+        width: 50%;
+    } 
+} 
+
+@media screen and (max-width:991px) and (min-width:768px) {
+   .mael{
+        width: 25%;
+    } 
+}
+
+@media screen and (max-width:767px) and (min-width:600px) {
+   .mael{
+        width: 100%;
+    } 
+}
+@media screen and (max-width:599px) {
+    .mael{
+        width: 100%;
+    }  
+}
