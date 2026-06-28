@@ -1,0 +1,103 @@
+
+*{
+        box-sizing: border-box;
+}
+
+.parent{
+    /* background-color: blueviolet; */
+}
+
+.marg{
+    width: 33.3%;
+ 
+     /* background-image: url(../images/bgs.jpg);
+     background-size: cover;
+     background-attachment: fixed; */
+    /*
+    margin:100px auto;
+    padding: 20px; */
+
+    /* background-image: url(../images/images.jpg),url(../images/bath.png);
+    background-repeat:repeat-x  , repeat-y;
+    background-position: center center; */
+
+    float: left;
+    padding:10px;
+   /* border: 2px solid brown; */
+    
+} 
+.inner{
+     background-color: blue;
+   height: 300px;
+}
+.clr{
+    clear: both;
+}
+
+.p-pos{
+    background-color: blue;
+    width: 200px;
+    height:200px ;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.pos{
+    width:50px ;
+    height: 50px;
+    background-color: aqua;
+    margin-top: 50px;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    /* position: fixed;
+    right: 5px;
+    top: 50%; */
+}
+
+span{
+    position: sticky;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    top: 0;
+
+}
+
+/* 
+768 600
+992  768
+1200>>992
+1200
+*/
+
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .marg{
+    width: 33.3%;
+}
+}
+@media screen and (max-width:991px) and (min-width:768px) {
+    .marg{
+    width: 50%;
+}
+}
+@media screen and (max-width:767px) and (min-width:600px) {
+    .marg{
+    width: 100%;
+}
+}
+@media (max-width:599px){
+       .marg{
+    width: 100%;
+} 
+}
+
+/* @media (max-width:700px){
+    /* body{
+        background-color: aqua;
+    } */
+/* .marg{
+    width: 100%;
+} */
+
