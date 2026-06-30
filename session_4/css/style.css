@@ -1,0 +1,226 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color: rgb(244, 244, 244);
+    --badel-color:red;
+    --second-color:blue;
+    --font-size:20px;
+    --font-color:rgb(104, 104, 104) ;
+}
+/* html{
+    --main-color: rgb(121, 160, 145) ;
+    --second-color:blue;
+    --font-size:20px;
+    --font-color:rgb(104, 104, 104) ;
+} */
+
+.var{
+    /* background-color: var(--main-colorn-color ,var(--badel-color-color ,blue)); */
+    /* width: 200px;
+    height: 200px;
+    color: var(--font-color);
+    font-size: var(--font-size); */
+}
+
+
+
+/*animations*/
+
+
+.var{
+    background-color: var(--main-color ,var(--badel-color ,blue));
+    width: 200px;
+    height: 200px;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    -webkit-animation-name:kanba ;
+            animation-name:kanba ;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+
+
+/* @keyframes kanba {
+    0%{background-color: var(--main-color ,var(--badel-color ,blue));}
+    50%{background-color: tomato;}
+    100%{background-color: blue;}
+}
+header{
+    background-image: url(../images/bgs.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    animation-name: slider;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} */
+
+/* @keyframes slider{
+    0%{  background-image: url(../images/bgs.jpg); width: 0; height: 0;}
+    25%{background-image: url(../images/full-6-600x420.jpg); width: 100%; height: 100vh;}
+    50%{background-image: url(../images/portfolio-1.jpg); width: 0; height: 0;}
+    75%{background-image: url(../images/portfolio-3.jpg); width: 100%; height: 100vh;}
+    100%{background-image: url(../images/portfolio-4.jpg); width: 0; height: 0;}
+} */
+
+.move-taxi{
+    /* transform: rotateY(180deg); */
+    position: relative;
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    
+}
+@-webkit-keyframes move{
+    0%{left: 0; top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}
+    50%{left: 700px; top: 0;  -webkit-transform: rotateY(180deg);  transform: rotateY(180deg);}
+     51%{left: 700px; top: 0;  -webkit-transform: rotateY(0deg);  transform: rotateY(0deg);}
+    100%{left: 0; top: 0; -webkit-transform: rotateY(0deg); transform: rotateY(0deg);}
+}
+@keyframes move{
+    0%{left: 0; top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}
+    50%{left: 700px; top: 0;  -webkit-transform: rotateY(180deg);  transform: rotateY(180deg);}
+     51%{left: 700px; top: 0;  -webkit-transform: rotateY(0deg);  transform: rotateY(0deg);}
+    100%{left: 0; top: 0; -webkit-transform: rotateY(0deg); transform: rotateY(0deg);}
+}
+/*css nesting*/
+.var{
+&:hover{
+
+}
+p{
+
+}
+h2{
+
+}
+img{
+
+}
+.item{
+
+
+}
+}
+
+
+/* .var p{
+
+} */
+
+
+
+/*Box Shadow*/
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* box-shadow: 10px 10px 10px 10px red; */
+    -webkit-box-shadow: 18px 21px 74px 28px rgba(0,0,0,0.75);
+            box-shadow: 18px 21px 74px 28px rgba(0,0,0,0.75);
+}
+h2{
+    /* text-shadow: 10px 10px 10px gray; */
+    text-shadow: 0px 26px 6px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+/*flex-box*/
+.our-baking{
+    height: 100vh; 
+    background-color: blue;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+    /* flex-flow: row nowrap; */
+    /* justify-content: center;
+    align-items: center;
+    align-content: center; */
+    width: 500px;
+}
+.baking-item{
+    background-color: fuchsia;
+    width: 20%;
+    height: 100px;
+    text-align: center;
+
+   
+}
+
+ul{
+    background-color: aqua;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+li{
+    padding: 20px;
+}
+
+@media (max-width:800px){
+    ul{
+        flex-direction: column;
+        text-align: center;
+     
+    }
+    li{
+ border-bottom: 3px solid red;
+        color: grey;
+        font-size: 25px;
+    }
+}
+
+
+/*child
+flex-grow    
+1+2+2 = 5   500/5 => 100
+1*100   2*100   2*100
+*/
+.one{
+    /* order: 1 ; */
+    /* flex-grow: 1;   width => 200  */
+}
+.two{
+    order: 0 ; /*default*/
+    /* flex-grow: 2;  width => 300 */
+}
+.three{
+    /* order: 2 ; */
+    /* flex-grow: 2;    width => 300 */
+}
+.four{
+    /* order: -1 ; */
+    flex-shrink: 2;
+}
+
+
+section{
+    height: 100vh;
+    /* background-image: linear-gradient(100deg ,  red , green 30%,  blue 30%); */
+/* background-image: linear-gradient(100deg ,  rgba(255, 0, 0,0.3) , rgba(0, 128, 0,0.4) ,  rgba(20, 20, 72,0.5) ) ,url(../images/bgs.jpg); */
+/* background-size: cover;
+background-position: center center; */
+background-image: radial-gradient(blue,yellow , orange,red,green);
+
+}
