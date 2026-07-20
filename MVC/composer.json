@@ -1,0 +1,10 @@
+{
+    "name": "marwa/mvc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Marwa\\Mvc\\": "src/"
+        }
+    },
+    "require": {}
+}
